@@ -1,0 +1,206 @@
+file:: [20230711_Swift_API_Design_Guidelines_1689121012533_0.pdf](../assets/20230711_Swift_API_Design_Guidelines_1689121012533_0.pdf)
+file-path:: ../assets/20230711_Swift_API_Design_Guidelines_1689121012533_0.pdf
+
+- [:span]
+  ls-type:: annotation
+  hl-page:: 18
+  hl-color:: green
+  id:: 64adf6dc-6a8c-4cd6-8954-9cfac060b5a2
+  hl-type:: area
+  hl-stamp:: 1689122523270
+- [:span]
+  ls-type:: annotation
+  hl-page:: 19
+  hl-color:: red
+  id:: 64adf7b2-5311-4d02-8171-fe71e3be7228
+  hl-type:: area
+  hl-stamp:: 1689122737472
+- [:span]
+  ls-type:: annotation
+  hl-page:: 20
+  hl-color:: red
+  id:: 64adf83b-01a1-4056-892e-811f901d1929
+  hl-type:: area
+  hl-stamp:: 1689122873805
+- [:span]
+  ls-type:: annotation
+  hl-page:: 21
+  hl-color:: red
+  id:: 64adfc15-bd19-4f48-a89f-a140bbffc1fd
+  hl-type:: area
+  hl-stamp:: 1689123860584
+- [:span]
+  ls-type:: annotation
+  hl-page:: 22
+  hl-color:: green
+  id:: 64adfc34-f62a-4da5-bb67-50a8c9f2ef60
+  hl-type:: area
+  hl-stamp:: 1689123889986
+- [:span]
+  ls-type:: annotation
+  hl-page:: 23
+  hl-color:: blue
+  id:: 64adfd47-bfd0-4e95-bf71-280c0095fab3
+  hl-type:: area
+  hl-stamp:: 1689124166228
+- [:span]
+  ls-type:: annotation
+  hl-page:: 24
+  hl-color:: red
+  id:: 64adfdd6-cc70-43e7-a4c7-555c0503f05b
+  hl-type:: area
+  hl-stamp:: 1689124307901
+- [:span]
+  ls-type:: annotation
+  hl-page:: 25
+  hl-color:: green
+  id:: 64adfdf7-1850-4cbc-8996-560a33577363
+  hl-type:: area
+  hl-stamp:: 1689124342874
+- [:span]
+  ls-type:: annotation
+  hl-page:: 26
+  hl-color:: green
+  id:: 64adfe67-3c25-410e-a285-e5aa8debf1b0
+  hl-type:: area
+  hl-stamp:: 1689124454963
+- [:span]
+  ls-type:: annotation
+  hl-page:: 26
+  hl-color:: red
+  id:: 64adfe73-588c-45d6-b8ee-dd377b24cefb
+  hl-type:: area
+  hl-stamp:: 1689124466341
+- [:span]
+  ls-type:: annotation
+  hl-page:: 27
+  hl-color:: blue
+  id:: 64adff72-aaf0-4590-9287-64528731e642
+  hl-type:: area
+  hl-stamp:: 1689124721351
+- [:span]
+  ls-type:: annotation
+  hl-page:: 30
+  hl-color:: green
+  id:: 64ae011d-be84-4c79-987f-a1b7df7ba12d
+  hl-type:: area
+  hl-stamp:: 1689125148103
+- [:span]
+  ls-type:: annotation
+  hl-page:: 31
+  hl-color:: red
+  id:: 64ae0133-333b-4100-bf5f-03682f8bf85f
+  hl-type:: area
+  hl-stamp:: 1689125170055
+- [:span]
+  ls-type:: annotation
+  hl-page:: 32
+  hl-color:: blue
+  id:: 64ae0170-6274-438c-9992-02f555fec284
+  hl-type:: area
+  hl-stamp:: 1689125233892
+- [:span]
+  ls-type:: annotation
+  hl-page:: 38
+  hl-color:: yellow
+  id:: 64ae04e3-df14-4e3a-98a8-5dd90d21a28e
+  hl-type:: area
+  hl-stamp:: 1689126112715
+- [:span]
+  ls-type:: annotation
+  hl-page:: 51
+  hl-color:: blue
+  id:: 64ae1042-d43f-48c2-96eb-c1d6b2c49eba
+  hl-type:: area
+  hl-stamp:: 1689129025626
+- [:span]
+  ls-type:: annotation
+  hl-page:: 52
+  hl-color:: green
+  id:: 64ae1067-7d74-4987-94fb-0bd0aefaebd7
+  hl-type:: area
+  hl-stamp:: 1689129062569
+- [:span]
+  ls-type:: annotation
+  hl-page:: 53
+  hl-color:: green
+  id:: 64ae107b-28d4-4e52-93b5-be805a6afd30
+  hl-type:: area
+  hl-stamp:: 1689129081573
+- [:span]
+  ls-type:: annotation
+  hl-page:: 53
+  hl-color:: red
+  id:: 64ae108b-8622-4d12-bd83-2fb33e3b03c2
+  hl-type:: area
+  hl-stamp:: 1689129098510
+- [:span]
+  ls-type:: annotation
+  hl-page:: 54
+  hl-color:: red
+  id:: 64ae10d2-3dcd-486c-bea5-90d449b243d5
+  hl-type:: area
+  hl-stamp:: 1689129168586
+- [:span]
+  ls-type:: annotation
+  hl-page:: 56
+  hl-color:: green
+  id:: 64ae114a-5097-477c-a744-13d695bea654
+  hl-type:: area
+  hl-stamp:: 1689129288378
+- [:span]
+  ls-type:: annotation
+  hl-page:: 57
+  hl-color:: red
+  id:: 64ae1196-750a-4cb3-a3bc-149478743f31
+  hl-type:: area
+  hl-stamp:: 1689129365597
+- [:span]
+  ls-type:: annotation
+  hl-page:: 59
+  hl-color:: red
+  id:: 64ae1206-ac6e-4d42-a441-8b75832f1b89
+  hl-type:: area
+  hl-stamp:: 1689129480909
+- [:span]
+  ls-type:: annotation
+  hl-page:: 59
+  hl-color:: green
+  id:: 64ae1216-8240-4249-9d46-aa2154552202
+  hl-type:: area
+  hl-stamp:: 1689129492853
+- [:span]
+  ls-type:: annotation
+  hl-page:: 60
+  hl-color:: green
+  id:: 64ae12f4-2766-4493-8fc8-0841900e1a18
+  hl-type:: area
+  hl-stamp:: 1689129744368
+- [:span]
+  ls-type:: annotation
+  hl-page:: 61
+  hl-color:: red
+  id:: 64ae1300-9776-4ff9-9e0c-2e902cb1c3ef
+  hl-type:: area
+  hl-stamp:: 1689129726959
+- [:span]
+  ls-type:: annotation
+  hl-page:: 61
+  hl-color:: red
+  id:: 64ae1323-af2d-4968-b026-3037ac90cff7
+  hl-type:: area
+  hl-stamp:: 1689129762829
+- [:span]
+  ls-type:: annotation
+  hl-page:: 67
+  hl-color:: blue
+  id:: 64ae148d-39c7-4cda-95c7-31bb4353afa1
+  hl-type:: area
+  hl-stamp:: 1689130123864
+- [:span]
+  ls-type:: annotation
+  hl-page:: 68
+  hl-color:: blue
+  id:: 64ae14ab-faf5-4622-b836-30e343bd33fb
+  hl-type:: area
+  hl-stamp:: 1689130154140
