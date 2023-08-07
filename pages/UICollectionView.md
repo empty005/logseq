@@ -1,0 +1,6 @@
+- https://developer.apple.com/documentation/uikit/uicollectionview
+- 참고 : 컬렉션 뷰 설정 시 어떻게 레이아웃을 정할까..?
+	- https://demian-develop.tistory.com/21 (1편)
+	- https://demian-develop.tistory.com/22 (2편)
+-
+-

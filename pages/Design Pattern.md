@@ -1,0 +1,59 @@
+## ((64ce4a2c-1548-48c5-b884-3433d52467cc))
+	- UIKit을 사용할 때, 가장 기초적이고 Apple이 권장하는 패턴
+	- 사용자의 입력을 Controller가 받아서 Model을 통해 데이터를 업데이트 하거나 불러오고, View를 통해 화면에 보여준다.
+	- 하지만 iOS에서는 View와 Controller가 강하게 연결되어 있어 Controller가 거의 모든 일을 하게 되는 문제가 있다
+	- ((64ce4a46-02ab-46fb-bd11-eab84921ba67))
+- ## ((64ce4a52-510b-4585-9ffb-6deeaf8519bc))
+	- MVC패턴에서의 단점이었던 방대해진 Controller의 역할을 분리하기 위해 고안된 패턴
+	- Presenter
+		- UIKit와 관련이 없는 로직들을 수행
+		- View에서 요청한 정보를 Model로부터 가공해서 View로 전달
+	- ((64ce4b3b-dd75-45da-82a9-97c2188a46eb))
+	- ![](https://miro.medium.com/v2/resize:fit:538/1*Lef1KHf9dCZo_JfZbm06gQ.png){:height 381, :width 299} 와 같은 형태로 구성되게 된다.
+	- [https://saad-eloulladi.medium.com/ios-swift-mvp-architecture-pattern-a2b0c2d310a3](((64ce4dcb-d261-47d9-b581-f6ea19212ce0)))
+- ## ((64ce4dec-ae8d-435a-84de-752388654c4b))
+	- SwiftUI와 RxSwift 기반 앱 개발에서 활용되는 패턴
+	- Controller의 역할을 ViewModel이 대신한다.
+	- View와 Model 사이에 바인딩(binding)을 통해 데이터의 변화를 자동으로 반영한다.
+	- Controller의 역할을 줄이고 테스트 용이성을 높일 수 있다.
+	- ((64ce4e10-0334-4a1d-a000-9e07c1136bcc))
+	- 장점 :
+		- View와 Model이 서로 전혀 알지 못하기에 독립성을 유지할 수 있다.
+		- 독립성을 유지하기 때문에 효율적인 유닛테스트가 가능하다.
+		- View와 ViewModel을 바인딩하기 때문에 코드의 양이 작다.
+		- View와 ViewModel의 관계가 N:1이다.
+	- 단점 :
+		- 간단한 UI에선 오히려 ViewModel을 설계하는 어려움이 있다.
+		- Data Binding이 필수적으로 요구된다.
+		- 복잡해질수록 MVC패턴의 Controller처럼 ViewModel이 빠르게 방대해진다.
+		- 표준화된 틀이 존재하지 않아 사람마다 이해가 다르다.
+- ## ((64ce4e67-4ebe-47dc-b0ef-09ee7842ad98))
+	- 함수형 프로그래밍에 기반한 패턴
+	- 사용자의 입력을 Intent라고 부르고, View는 Intent를 받아서 Model에 전달한다.
+	- Model은 Intent에 따라 상태를 변경하고 View에게 전달한다.
+	- 이 과정에서 불변성(Immutability)과 순수함수(Pure Function)를 지키기 때문에 예측 가능하고 안정적인 앱 개발이 가능하다.
+	- https://habr.com/en/articles/583376/
+	- ((64ce4e91-3ac4-4e25-843a-f9ce6dc1984e))
+	- 장점
+		- 앱의 상태가 하나 뿐이라, 상호작용이 많아져도 상태 충돌이 없다.
+		- 데이터의 흐름이 정해져 있어 흐름을 이해하고 관리하기가 쉽다.
+		- 각각 값이 불변하기 때문에, 스레드에 있어 안정성을 갖는다.
+	- 단점
+		- 다른 MV 아키텍쳐에 비해 러닝커브가 높다.
+		- 작은 변경도 모두 intent를 통해야 하고, 아주 작은 앱도 최소한의 intent와 model를 가져야 한다.
+		- model를 업데이트 하기 위해 매번 새로운 인스턴스를 만들어야 하므로, 
+		  너무 많은 객체가 만들어지면 메모리 관리가 빈번하게 작동될 수 있다.
+- ## ((64ce504c-95e4-4fe2-8950-e972de49872e))
+	- MV종류의 패턴(MVC, MVVM, MVI)을 대체하기 위해 만들어진 패턴
+	- VIPER 패턴은 모듈 간의 의존성을 낮추고 책임을 분리함 으로써 테스트 용이성과 유지보수성을 높일 수 있다.
+	- 하지만 구현하기 복잡하고 파일 수가 많아지는 단점이 있다.
+	- https://github.com/amitshekhariitbhu/iOS-Viper-Architecture/tree/master
+	- ((64ce5095-87e4-4e2c-b245-9868921e741e))
+- ## ((64ce50a3-9650-4b8d-9357-c312136ff400))
+	- 앱을 여러 개의 RIB이라는 독립적인 모듈로 나누고, 각 모듈은 Router, Interactor, Builder로 구성한다.
+	- Router는 화면 전환과 데이터 전달을 담당하고, Interactor는 비즈니스 로직을 처리하며, Builder는 RIB의 생성과 의존성 주입을 담당한다
+	- .이렇게 함으로써 모듈 간의 의존성을 낮추고 재사용성과 유지보수성을 높일 수 있다.
+	- 하지만 VIPER 처럼 고려해야할 모듈과 코드 파일 수가 늘어나고, 사전에 요구되는 학습량이 많다.
+	- https://github.com/uber/RIBs/wiki
+	- ((64ce50c6-c857-4961-8e00-d39158579590))
+-
