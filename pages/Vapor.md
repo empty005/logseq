@@ -1,3 +1,4 @@
 - https://vapor.codes
-- Vapor는 맥에서 Swift 언어로
+- Vapor는 맥에서 Swift 언어로 서버를 구축 할 수 있는 기술이다.
+- 다만 사용이 많이 되지는 않으니까 고려. mac
 -
