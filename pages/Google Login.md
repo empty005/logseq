@@ -1,0 +1,3 @@
+- https://paulallies.medium.com/google-sign-in-swiftui-2909e01ea4ed
+- https://velog.io/@woojusm/SwiftUI-Firebase-Login-with-Google
+- https://firebase.google.com/docs/auth/ios/google-signin?hl=ko
