@@ -1,1 +1,2 @@
 - https://velog.io/@ezenjun/SwiftUI-SignInWithAppleButton%EC%95%A0%ED%94%8C%EB%A1%9C%EA%B7%B8%EC%9D%B8-swift-5.0-XCode-14.2
+- https://jinnify.tistory.com/72
