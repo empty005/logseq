@@ -1,0 +1,15 @@
+# TextField
+	- 값을 입력받을 수 있는 컴포넌트
+	- SwiftUI에서는 @State 상태 프로퍼티 하나를 두고 값이 입력되면 여기에도 입력되도록 구현
+	- ## @FocusState
+		- 텍스트 필드의 포커스 (firstResponder) 관리는 @FocusState를 사용하면 매우 손쉽게 코드에서도 제어가 가능
+		- @FocusState에 사용할 텍스트 필드의 타입을 정의
+		- @FocusState 프로퍼티를 선언하고, 이 프로퍼티에 바인딩
+		- 여기서 바인딩의 의미: 양방향 업데이트
+			- TextField가 포커스를 얻으면 focusField 프로퍼티에 값을 변경하고 focusField의 값이 변경되면 TextField에 focus를 획득
+		- 버튼을 추가하고 여기서 focusField를 변경
+			- username가 입력 안되었으면 username으로 포커싱
+			- email이 입력 안되었으면 email로 포커싱
+		- ex) 회원가입 절차, 로그인 진행 시 해당 입력이 비어 있으면 포커싱 해주는 방법 구현
+-
+-

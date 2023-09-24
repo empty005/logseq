@@ -12,7 +12,7 @@
 	  
 	  class NavigationState: ObservableObject {
 	      
-	      @Published var routes: [Route] = []
+	      @Published var routes: [Route] = [iphonePurchaseView() ]
 	      
 	    // 원하는 뷰까지 팝 해서 가져오기
 	      func popTo(_ route: Route) {

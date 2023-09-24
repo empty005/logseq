@@ -16,7 +16,7 @@
 	       .navigationDestination(for: Int.self) { value in
 	               DetailView(value: value)
 	        }
-	   NavigationLink("CustomerView", value: "dayexx")
+	   NavigationLink("CustomerView", value: "c")
 	                  .navigationDestination(for: String.self) { value in
 	                      CustomerView(name: value)
 	                  }

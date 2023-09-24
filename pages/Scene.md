@@ -1,0 +1,10 @@
+- https://developer.apple.com/documentation/swiftui/scene
+-
+- # Scene (protocol)
+	- A part of an app’s user interface with a life cycle managed by the system.
+	- 시스템이 수명주기를 관리하는 앱의 사용자 인터페이스의 일부
+	- 시스템은 실행중이 플랫폼에 맞추어 사용자에게 표시하는 방법을 결정
+	- 화면 일부 또는 전체를 차지하는 각종 View들이 모여 구성하는 화면 요소 모음의 기본 단위
+	- View들이 모인 Scene들은 [[App]]을 구성하게 된다.
+-
+- 즉 View가 모여 Scene 만들고 Scene을 모아 App을 이룬다.

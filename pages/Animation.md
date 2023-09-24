@@ -1,5 +1,8 @@
 ## [[SwiftUI]]
 	- https://medium.com/@amosgyamfi/learning-swiftui-spring-animations-the-basics-and-beyond-4fb032212487
+	- 여기서 소스 코드 받을 수 있음
+	  https://github.com/GetStream/swiftui-spring-animations
+	-
 	- ---
 	- ## [[SwiftUI Spring Animation Types]]
 	- ### .spring() 
@@ -39,6 +42,38 @@
 			  logseq.order-list-type:: number
 			- Undamped => DF = 0 해당 오브젝트가 영원히 진동한다.
 			  logseq.order-list-type:: number
-		- blendDuration =>
+		- blendDuration => 이전 애니메이션이 중지되고 다음 애니메이션이 시작되는 시간 프레임 값. 여기서 blendDuration 값을 수정해도 시각적으로는 변경되지 않아 확인하기 어렵다.
 		  logseq.order-list-type:: number
+	- ### interactiveSpring(response, dampingFraction, blendDuration)
+	  logseq.order-list-type:: number
+		- 기본값: InteractiveSpring(response: Double = 0.15, dampingFraction: Double = 0.86, blendDuration: Double = 0.25).
+		  logseq.order-list-type:: number
+-
+-
+- ## Damping Fraction 값에 따른 이미지
+	- ![](https://miro.medium.com/v2/resize:fit:700/1*mfLtJXj3rukjckujBa1zQQ.gif)
+- ## Stiffness Bounce: High, low, medium, and very low stiffness
+	- ![](https://miro.medium.com/v2/resize:fit:700/1*Hi4HBE5xc1dxjGdFYrnqRA.gif)
+- ## Stiffness and Damping: Stiff, gentle, wobble, and no wobble
+	- ![](https://miro.medium.com/v2/resize:fit:700/1*MUY5IuS3TJgLYRXXBvjSCw.gif)
+-
+- 이를 활용한 SwiftUI Spring Animation 예제
+	- 포지션 도착하는 스프링 애니메이션 ( 잡아 당겨서 도착하는 듯한 느낌의 애니메이션 )
+	  logseq.order-list-type:: number
+		- ![](https://miro.medium.com/v2/resize:fit:700/1*smSXPaw1CCJexBaA8uiV-g.gif)
+	- 크기 스프링 애니메이션 ( 크기가 1에서 2로 커져 바운싱 하는 것 같은 애니메이션 )
+	  logseq.order-list-type:: number
+		- ![](https://miro.medium.com/v2/resize:fit:700/1*BH4U1H4VUuVFaxwPqvLO8w.gif)
+	- 녹음 할때 사용하는 형태의 스프링 형태
+	  logseq.order-list-type:: number
+		- ![](https://miro.medium.com/v2/resize:fit:700/1*yL7vu6rTokbcdzL2z1gSiQ.gif)
+	- 사진 미리보기에서 자세히 보기로 전환 하는 애니메이션
+	  logseq.order-list-type:: number
+		- ![](https://miro.medium.com/v2/resize:fit:700/1*5hclNI4O1a0vieO_bj0mLQ.gif)
+	- 공이 떨어지고 튕기는듯한 애니메이션
+	  logseq.order-list-type:: number
+		- ![](https://miro.medium.com/v2/resize:fit:700/1*-koOwK6zmnq1gFFWRWjEFA.gif)
+	- 스프링 효과를 통한 종 움직임
+	  logseq.order-list-type:: number
+		- ![](https://miro.medium.com/v2/resize:fit:700/1*HrSjgno0RniYoP1hBP_toQ.gif)
 -
