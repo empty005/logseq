@@ -1,4 +1,6 @@
 - https://docs.tuist.io/tutorial/get-started/
+- 알아야 하는 이론과 [[Xcode]]에 대한 개념
+	- https://baegteun.tistory.com/2
 -
 - ## 계기
 	- Tuist는 기존 멋쟁이 사자처럼에서 진행하는 2개의 대규모 프로젝트를 진행한 적이 있다.
@@ -23,7 +25,111 @@
 	  (폴더 생성 -> 이동 -> tuist 생성 (옵션은 iOS)) + template swiftUI로 설정이 가능함
 	- 3. 템플릿 설정 - [[stencil]]
 	- https://cheonsong.tistory.com/17
-	-
+	- https://baegteun.tistory.com/2
+-
+-
+- ##  설정
+	- curl -Ls https://install.tuist.io | bash
+	  logseq.order-list-type:: number
+	- mkdir Grew && cd Grew (폴더 생성 + 현 위치 변경)
+	  logseq.order-list-type:: number
+	- ``tuist init --platform ios --template swiftui`` 실행
+	  logseq.order-list-type:: number
+	- 이후에 프로젝트 파일 싹 다 삭제 한 이후에 Project+Templates 파일에 수정 (테스트는 포함하지 않아서 일단 주석 처리)
+	  logseq.order-list-type:: number
+	  collapsed:: true
+		- ```swift
+		  
+		  import ProjectDescription
+		  
+		  public extension Project {
+		      static func makeModule(
+		          name: String,
+		          platform: Platform = .iOS,
+		          product: Product,
+		          organizationName: String = "Grew",
+		          packages: [Package] = [],
+		          deploymentTarget: DeploymentTarget? = .iOS(targetVersion: "17.0", devices: [.iphone, .ipad]),
+		          dependencies: [TargetDependency] = [],
+		          sources: SourceFilesList = ["Sources/**"],
+		          resources: ResourceFileElements? = nil,
+		          infoPlist: InfoPlist = .default
+		      ) -> Project {
+		          let settings: Settings = .settings(
+		              base: ["ENABLE_USER_SCRIPT_SANDBOXING":"YES"],
+		              configurations: [
+		                  .debug(name: .debug),
+		                  .release(name: .release)
+		              ], defaultSettings: .recommended)
+		  
+		          let appTarget = Target(
+		              name: name,
+		              platform: platform,
+		              product: product,
+		              bundleId: "\(organizationName).\(name)",
+		              deploymentTarget: deploymentTarget,
+		              infoPlist: infoPlist,
+		              sources: sources,
+		              resources: resources,
+		              dependencies: dependencies
+		          )
+		  
+		  //         let testTarget = Target(
+		  //            name: "\(name)Tests",
+		  //            platform: platform,
+		  //            product: .unitTests,
+		  //            bundleId: "\(organizationName).\(name)Tests",
+		  //            deploymentTarget: deploymentTarget,
+		  //            infoPlist: .default,
+		  //            sources: ["Tests/**"],
+		  //            dependencies: [.target(name: name)]
+		  //        )
+		  
+		          let schemes: [Scheme] = [.makeScheme(target: .debug, name: name)]
+		  
+		          let targets: [Target] = [appTarget]
+		  //        let targets: [Target] = [appTarget, testTarget]
+		  
+		          return Project(
+		              name: name,
+		              organizationName: organizationName,
+		              packages: packages,
+		              settings: settings,
+		              targets: targets,
+		              schemes: schemes
+		          )
+		      }
+		  }
+		  
+		  extension Scheme {
+		      static func makeScheme(target: ConfigurationName, name: String) -> Scheme {
+		          return Scheme(
+		              name: name,
+		              shared: true,
+		              buildAction: .buildAction(targets: ["\(name)"]),
+		  //            testAction: .targets(
+		  //                ["\(name)Tests"],
+		  //                configuration: target,
+		  //                options: .options(coverage: true, codeCoverageTargets: ["\(name)"])
+		  //            ),
+		              runAction: .runAction(configuration: target),
+		              archiveAction: .archiveAction(configuration: target),
+		              profileAction: .profileAction(configuration: target),
+		              analyzeAction: .analyzeAction(configuration: target)
+		          )
+		      }
+		  }
+		  
+		  ```
+	- 여기에 설정해야 하는 값에 대한 정리
+	  logseq.order-list-type:: number
+		- SPM 패키지 종속 처리 (Facebook Login / Kakao Login / Google Login / 검색 엔진 처리를 위한 Algolia) 추가
+		  logseq.order-list-type:: number
+		- cocoaPods 설치 및 진행 (NaverMaps)
+		  logseq.order-list-type:: number
+		- SwiftLint 적용을 위한 run Scripts 설정
+		  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 -
 - ## 삭제
 	- curl -Ls https://raw.githubusercontent.com/tuist/tuist/main/script/uninstall | bash
