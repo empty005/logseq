@@ -129,6 +129,10 @@
 		  logseq.order-list-type:: number
 		- SwiftLint 적용을 위한 run Scripts 설정
 		  logseq.order-list-type:: number
+		- build Setting에 Enable_Sandbox : Yes로 설정
+		  logseq.order-list-type:: number
+		- Info.plist 값 (네이버 지도설정을 위한 Client 값 기입) 설정 + Secrets.plist 값 사용 시에 설정
+		  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 -
 - ## 삭제
@@ -136,4 +140,3 @@
 -
 -
 - https://leeari95.tistory.com/74
--
