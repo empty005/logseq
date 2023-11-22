@@ -96,6 +96,11 @@
 	- infoPlist - Info.plist를 정의하는데 추가적으로 key와 값을 입력함 (예를 들면 네이버 API연동을 위한 custom key 라던가 iOS 17 버전을 위한 Enable Sandbox 기능을 끄는 등 사용이 필요한 사항에 대한 설정)
 	- Sources = 소스 코드의 경로를 입력 [ ] 사이에 문자열로 경로 입력도 가능
 	- Entitlements = APNs 사용을 위한 push 알람 설정을 위한 경로 입력
-	- scirpts = SwiftLint에 들어가는 사항 의 경우 스크립트 설정한 후 입력
+	- scripts = SwiftLint에 들어가는 사항 의 경우 스크립트 설정한 후 입력
 	- dependencies = 타겟의 의존성에 대한 사항 / 라이브러리나, 다른 모듈을 의존성으로 기입 시킬 때 사용
+	- settings = Target의 세팅을 정의합니다.
+	- coreDataModels = coreData 모델의 경로와 버전 설정
+	- environment = scheme에서 Edit Scheme 에서 Environment Variables 설정하면 자동으로 생성합니다.
+	- launchArguments = launch 시에 나오는 인자 값들에 대한 프로젝트 셋업 항목입니다.
+	- additionalFiles = 프로젝트 생성시 자동으로 생겨나지 않는 파일 (ex. Readme.md 파일) 을 등록해두면 Xcode에서 볼 수 있다.
 -

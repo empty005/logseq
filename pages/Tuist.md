@@ -2,6 +2,18 @@
 - 알아야 하는 이론과 [[Xcode]]에 대한 개념
 	- https://baegteun.tistory.com/2
 -
+- 도입을 하고 싶었으나 해당 모듈에 대한 개념을 추가적으로 필요하다.
+- 참고) 
+  :LOGBOOK:
+  CLOCK: [2023-09-21 Thu 02:44:59]
+  :END:
+	- https://baegteun.tistory.com/2
+	- https://github.com/baekteun/Tuist_Sample/tree/master
+	- https://github.com/mash-up-kr/SeeYouAgain_iOS/blob/main/Makefile
+	- https://www.google.com/search?q=tuist+podfile&rlz=1C5CHFA_enKR1027KR1027&oq=tuist+podfile&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgYIARBFGDzSAQg0NzgzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#ip=1
+	- https://cheonsong.tistory.com/17
+	- https://github.com/cheonsong/TuistTemplete/tree/master/Tuist
+-
 - ## 계기
 	- Tuist는 기존 멋쟁이 사자처럼에서 진행하는 2개의 대규모 프로젝트를 진행한 적이 있다.
 	  그 과정 중에서 내가 사실상 2번의 PM을 담당 하였는데 Git 관련한 처리 및 관리를 수행하느라 많은 시간을 들였다.
@@ -140,7 +152,6 @@
 		  logseq.order-list-type:: number
 		- Info.plist 값 (네이버 지도설정을 위한 Client 값 기입) 설정 + Secrets.plist 값 사용 시에 설정
 		  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
 -
 - ## 삭제
 	- curl -Ls https://raw.githubusercontent.com/tuist/tuist/main/script/uninstall | bash
