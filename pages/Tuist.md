@@ -13,7 +13,7 @@
 	- https://www.google.com/search?q=tuist+podfile&rlz=1C5CHFA_enKR1027KR1027&oq=tuist+podfile&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgYIARBFGDzSAQg0NzgzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#ip=1
 	- https://cheonsong.tistory.com/17
 	- https://github.com/cheonsong/TuistTemplete/tree/master/Tuist
--
+	- https://www.pointfree.co/collections/composable-architecture
 - ## 계기
 	- Tuist는 기존 멋쟁이 사자처럼에서 진행하는 2개의 대규모 프로젝트를 진행한 적이 있다.
 	  그 과정 중에서 내가 사실상 2번의 PM을 담당 하였는데 Git 관련한 처리 및 관리를 수행하느라 많은 시간을 들였다.
@@ -45,6 +45,7 @@
 	- 3. 템플릿 설정 - [[stencil]]
 	- https://cheonsong.tistory.com/17
 	- https://baegteun.tistory.com/2
+-
 -
 -
 - ##  설정
