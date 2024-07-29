@@ -146,3 +146,21 @@
 	- 컴파일러는 확장된 소스 코드를 사용하여 완료될 때까지 계속 진행합니다.
 	  logseq.order-list-type:: number
 -
+- 매크로는 AST라는 추상 구문 트리라는 메모리 표현을 활용한다.
+	- 매크로를 확장하기 위해, 컴파일러는 Swift 파일을 읽고 *추상 구문 트리 (abstract syntax tree)* 또는 AST 라고 알려진 해당 코드의 메모리 표현을 생성합니다. AST 는 컴파일러나 매크로 구현과 같이 해당 구조와 상호작용하는 코드를 더 쉽게 작성하기 위해 코드의 구조를 명시적으로 만듭니다. 다음은 일부 상세정보를 단순화한 위 코드에 대한 AST 표현입니다.
+- ![](https://bbiguduk.gitbook.io/~gitbook/image?url=https%3A%2F%2F2352141256-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-M7Zt2HBfR67oi6QnKHI%252Fuploads%252Fgit-blob-f8afac36f45ddf2e7b374b3841d15de5b71db4b9%252Fmacro-ast-original%7Edark%25402x.png%3Falt%3Dmedia&width=768&dpr=4&quality=100&sign=0466e87a232996bd3754c4b9e1293bc970022009e822c60753322cf8ebb295ba)
+  id:: 6639b8ce-93a8-4ab8-9bc8-919aeb6705f4
+-
+	- 매크로 구현에 전달된 AST 는 매크로를 표현하는 AST 요소만 포함하고 앞 또는 뒤에 오는 코드를 포함하지 않습니다.
+	- 매크로 구현은 파일 시스템 또는 네트워크 접근을 방지하는 샌드박스 환경 (sandboxed environment) 에서 실행됩니다.
+-
+- ## 매크로 구현
+- 매크로를 구현하기 위해, 두 개의 구성요소를 만듭니다: 매크로 확장을 수행하는 타입과 API 로 노출하도록 매크로를 선언한 라이브러리 입니다. 매크로 구현은 매크로의 클라이언트 빌드의 부분으로 수행되기 때문에, 매크로와 해당 클라이언트를 함께 개발하는 경우에도 이러한 부분은 매크로를 사용하는 코드와 별개로 빌드됩니다.
+  
+  Swift Package Manager 를 사용하여 새로운 매크로를 생성하기 위해, `swift package init --type macro` 를 수행합니다 - 이것은 매크로 구현과 선언에 대한 템플릿을 포함하여 몇 개의 파일을 생성합니다.
+  
+  기존 프로젝트에 매크로를 추가하기 위해, 다음과 같이 `Package.swift` 파일에 처음을 수정합니다:
+- `swift-tools-version` 에 Swift tools 버전을 5.9 이상으로 지정합니다.
+- `CompilerPluginSupport` 모듈을 가져옵니다.
+- `platforms` 목록에 최소 배포 타겟으로 macOS 10.15 를 포함합니다.
+- {{embed [[https://bbiguduk.gitbook.io/swift/language-guide-1/macros#implementing-a-macro]]}}
